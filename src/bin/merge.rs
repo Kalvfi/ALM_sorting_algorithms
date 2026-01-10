@@ -33,7 +33,7 @@ fn merge_sort<T: Ord + Clone>(items: &mut Vec<T>) {
     merge(items, &left, &right);
 }
 
-fn merge<T: Ord + Clone>(items: &mut [T], left: &[T], right: &[T]) {
+fn merge<T: Ord + Clone>(items: &mut Vec<T>, left: &Vec<T>, right: &Vec<T>) {
     let mut i = 0; // index for left
     let mut j = 0; // index for right
     let mut k = 0; // index for items
